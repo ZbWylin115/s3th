@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seth at Sunset</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div id="game" class="game-shell fade-in">
+
+      <header class="topbar">
+        <div>
+          <h1>Seth at Sunset</h1>
+          <p class="subtitle">A spicy, campy little zoo dating sim</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="restartBtn" class="util-btn">Restart</button>
+        </div>
+      </header>
+
+      <main class="main-grid">
+        <aside class="left-panel">
+          <div class="portrait-card">
+            <div class="portrait-tag">SETH</div>
+            <div class="portrait-wrap">
+              <img id="portraitImg" src="seth.png" alt="Portrait of Seth" />
+            </div>
+          </div>
+
+          <div class="status-card">
+            <div class="status-title">Vibe Check</div>
+            <div id="vibeText" class="status-text">
+              Warm afternoon. Mild tension. Decent odds.
+            </div>
+          </div>
+
+          <div class="sparkle-card">
+            <div class="status-title">Route Notes</div>
+            <div id="routeNotes" class="status-text">
+              Seth appears sarcastic, employed, and distressingly handsome.
+            </div>
+          </div>
+        </aside>
+
+        <section class="story-panel">
+          <div class="nameplate-row">
+            <div id="nameplate" class="nameplate">Narrator</div>
+          </div>
+
+          <div id="textBox" class="text-box">
+            Loading handsome zookeeper...
+          </div>
+
+          <div id="choices" class="choices"></div>
+        </section>
+      </main>
+
+      <div id="endingOverlay" class="ending-overlay hidden">
+        <div class="ending-card">
+          <div class="ending-cg">
+            <img id="endingPortrait" src="seth.png" alt="Ending CG Seth" />
+            <div class="ending-glow"></div>
+          </div>
+          <div class="ending-meta">
+            <div class="ending-label">ENDING UNLOCKED</div>
+            <h2 id="endingTitle">Patio Heat</h2>
+            <p id="endingSubtitle">The chemistry won. Decisively.</p>
+            <div id="endingBody" class="ending-body"></div>
+            <div class="ending-actions">
+              <button id="playAgainBtn" class="util-btn big-btn">Play Again</button>
+              <button id="closeEndingBtn" class="util-btn ghost-btn">Back to Scene</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="scenes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
